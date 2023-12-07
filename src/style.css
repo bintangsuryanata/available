@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #ffff;
+
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+.sidebar{
+    background-color: #13003C;
+    width:256px;
+    height: 100vh;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+.sidebar .head{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f6f6f6;
+}
+.user-img{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user-img img{
+    width:100%;
+    object-fit: cover;
+}
+.user-details .title,
+.menu .title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffff;
+    margin-bottom: 10px
+}
+.menu ul li {
+    list-style: none;
+    margin-bottom:5px;
+}
+.menu ul li a{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-size: 16px;
+    font-weight:400;
+    color: #f6f6f6;
+    text-decoration: none;
+    padding: 12px 8px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+.menu ul li > a:hover,
+.menu ul li.active > a{
+    color: #ffff;
+    background-color: #402281;
+}
+.menu ul li .text{
+    flex: 1;
+}
+.menu ul li.active .BiChevronDown{
+    transform: rotate(180deg);
+}
+.menu .sub-menu{
+    display:none;
+    margin-left:20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    border-left: 1px solid #13003C;
+}
+.menu .sub-menu li a{
+    padding: 10px 8px;
+    font-size:14px
+}
